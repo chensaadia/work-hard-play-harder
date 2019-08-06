@@ -1,0 +1,433 @@
+body{
+  margin: 0;
+  overflow: hidden;
+  background-image: url(../img/floor.jpg);
+  background-repeat: repeat;
+}
+
+.hide{
+  display: none;
+}
+
+.red{
+  border: none;
+  background-color: rgba(255, 0, 0, 0.5) !important;
+}
+
+.blue{
+    border: none;
+  background-color: rgba(59, 195, 253, 0.5) !important;
+}
+#score{
+    top: 810px;
+    position: fixed;
+    left: 814px;
+    height: 71px;
+    background-color: rgba(59, 195, 253, 0.7) !important;
+    width: 137px;
+    border-radius: 5px;
+    font-size: 24px;
+    padding: 30px;
+}
+#score div{
+ text-align: center;
+}
+
+/* #message{
+  position: fixed;
+  top: 22px;
+  left: 1260px;
+  width: 482px;
+  height: 80px;
+  background-color: rgba(59, 195, 253, 0.9);
+} */
+#start_page{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: black;
+  z-index: 60;
+}
+#start_btn{
+  width: 200px;
+  height:80px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: #3BC3FD;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 80px;
+}
+
+#start_btn:hover{
+  opacity: 0.85;
+  cursor: pointer;
+}
+
+#credit{
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: fixed;
+  bottom:0;
+  left:0;
+  right:0;
+  margin: auto;
+  z-index: 1000;
+  display: none;
+}
+#credit_box h1 {
+  color: white;
+  text-align: center;
+  font-size: 50xp;
+}
+#credit_box h2 {
+  color: white;
+  text-align: center;
+  font-size: 36xp;
+}
+#credit_box img {
+  margin: auto;
+  display: block;
+}
+#credit_box{
+  -webkit-transition:  180s linear;
+  transition:  180s linear;
+  bottom: -11230px;
+  position: fixed;
+  width: 1000px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  color: white;
+  text-align: center;
+  font-size: 24px;
+}
+.credit-animate{
+  bottom: 200px !important;
+}
+
+
+#start_image{
+  background-image: url(../img/start.jpg);
+  width: 1916px;
+  height: 935px;
+  position:fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+#short_message{
+  position: fixed;
+  top: 22px;
+  left: 1260px;
+  width: 482px;
+  height: 80px;
+  background-color: rgba(0,0,0,0.3);
+  z-index: 49;
+}
+
+#short_message_box{
+  width: 69%;
+  margin-top: 3px;
+  height: 50px;
+  float: right;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+}
+
+#short_message_img_container{
+  float: right;
+  margin-left: 5px;
+  width: 25%;
+  height: 100%;
+}
+
+#short_message_img{
+  height:100%;
+  width:auto;
+}
+
+#hud{
+  width: 640px;
+  height: 462px;
+  /* right: 0;
+  bottom: 0; */
+  background-color: rgba(0,0,0,0.85);
+  position: fixed;
+  z-index: 49;
+  color: white;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+.hud-friend{
+  width:100%;
+  height: 100px;
+  background-color: rgba(255,255,255,0.5);
+  padding: 5px;
+  border: 1px solid rgba(0,0,0,0.8);
+  font-size: 24px;
+}
+.hud-friend img{
+  width: auto;
+  height: 100%;
+}
+.hud-friend .hud-friend-image{
+  width:30%;
+  height: 100%;
+  float: left;
+}
+.hud-friend .hud-friend-title{
+  width:50%;
+  height: 100%;
+  float: left;
+  text-align: center;
+  line-height: 80px;
+}
+.hud-friend .hud-friend-heal{
+  width:20%;
+  height: 100%;
+  float: left;
+  text-align: center;
+  line-height: 80px;
+}
+
+
+#game_container{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border: 2px  solid black;
+}
+
+#ui{
+  width:100%;
+  height:100%;
+  position: fixed;
+  background-color: rgba(0,0,0,0.9);
+  z-index: 50;
+}
+#ui #menu{
+  width: 320px;
+  height:235px;
+  position: fixed;
+  z-index: 51;
+  background-color: rgba(255,255,255,0.2);
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+#ui #menu h1{
+  color: #3BC3FD;
+  text-align: center;
+}
+#ui #menu hr{
+  border-color: black;
+  padding: 0;
+  margin: 0;
+}
+
+#ui #menu .button{
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  font-size: 24px;
+  background-color: #3BC3FD;
+}
+#ui #menu .button:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+mainActor{
+  display: block;
+  position: absolute;
+  /* background-color: blue; */
+  background-image: url(../img/chen.png);
+  background-position: center;
+  background-size: cover;
+  width: 30px;
+  height: 37px;
+  border-radius: 50%;
+  z-index: 3;
+}
+#player{
+  left: 0;
+  bottom: 0;
+  height: 50px;
+  width: 200px;
+  position: fixed;
+  border-radius: 0 22px 0 0;
+  z-index: 49;
+}
+#player .hud-friend{
+  color:black;
+  background-color: rgba(59, 195, 253, 0.7);
+}
+#player .hud-friend .hud-friend-title , #player .hud-friend .hud-friend-heal {
+  line-height: 50px;
+}
+.ball{
+  display: block;
+  position: absolute;
+  background-color: red;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  z-index: 1;
+}
+.wn{
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  z-index: 2;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../img/message.png);
+}
+
+.friend{
+  display: block;
+  position: absolute;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.trigger{
+  width: 0;
+  height:0;
+}
+
+.bomb-sound{
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border:2px solid black;
+  border-radius: 50%;
+  z-index: 1;
+  text-align: center;
+}
+
+.flowers{
+  position: absolute;
+  display:block;
+  width:20px;
+  height:20px;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../img/flowers.png);
+}
+.toilet{
+  position: absolute;
+  display:block;
+  width:50px;
+  height:28px;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../img/toilet.png);
+  z-index: 1;
+}
+.car-model1{
+  position: absolute;
+  display:block;
+  width:20px;
+  height:10px;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../img/porsche-normal.png);
+}
+
+.speker{
+  position: absolute;
+  display:block;
+  width:20px;
+  height:20px;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../img/speker.png);
+}
+.grass{
+  position: absolute;
+  display:block;
+  width:20px;
+  height:20px;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../img/grass.jpg);
+}
+.floor2{
+  position: absolute;
+  display:block;
+  width:20px;
+  height:20px;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../img/floor2.jpg);
+}
+.chair{
+  position: absolute;
+  display:block;
+  width:37.5px;
+  height:30px;
+  background-position: center;
+  background-size: cover;
+}
+.chair-left{
+  background-image: url(../img/chairleft.png);
+}
+.chair-right{
+  background-image: url(../img/chairright.png);
+}
+.chair-top{
+  background-image: url(../img/chairtop.png);
+}
+.chair-bottom{
+  background-image: url(../img/chairbottom.png);
+}
+
+
+.computer{
+  position: absolute;
+  display:block;
+  background-position: center;
+  background-size: cover;
+}
+.computer-left{
+  background-image: url(../img/computerleft.png);
+  width: 20px;
+  height: 43px;
+}
+.computer-right{
+  background-image: url(../img/computerright.png);
+  width: 20px;
+  height: 43px;
+}
+.computer-top{
+  background-image: url(../img/computertop.png);
+  height: 20px;
+  width: 43px;
+}
+.computer-bottom{
+  background-image: url(../img/computerbottom.png);
+  height: 20px;
+  width: 43px;
+}

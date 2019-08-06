@@ -1,0 +1,118 @@
+<html>
+  <head lang="he">
+
+<meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <div id="start_page">
+        <div  id="start_image"></div>
+        <div class = "button" id="start_btn">CONTINUE</div>
+    </div>
+    <div id="credit">
+        <div id="credit_box">
+            <h1 style="padding-top:150px;">Game Ending</h1>
+            <img src="img/img/end.jpeg">
+            <h1 style="padding-top:200px;" dir="rtl">ברכות</h1>
+            <h2>דבורה</h2>
+            <div dir="rtl">חן אני חולה עליך! אני אתגעגע מאוד ❤</div>
+            <img src="img/img/1.jpeg">
+            <h2>רומן</h2>
+            <div dir="rtl">אחי אתה נעלם לי ככה באור היום.
+היה לי עונג לעבוד איתך בשותף.
+תודה על העזרה ונתינה!!!
+בנוסף אתה בן אדם סופר מצחיק.
+תמשיך לשמור על ההומור וחן :)
+בהצלחה במקום החדש!</div>
+            <h2>יאנה</h2>
+            <div dir="rtl">חן חבר יקר , אין לך מושג עד כמה תהיה חסר לשלושתנו כשוטף לאוכל ואני בטוחה גם שלא רק לי תחסר כחבר אמיתי , למרות שאני בטוחה שנשמור על קשר עדיין לא נתראה על בסיס יום יומי וזה קצת מבאס (פה דמעות זולגות לי מהעניים חחחח) מאחלת לך בהצלחה ושלא תמצא חברים כמונו שם ותוכל תמיד לבד חחחחחח סתם!!!!! באמת אני בטוחה שתצליח ולא תהיה לבד כאתה בן אדם אמיתי ובטוח יעריכו אותך גם שם! אוהבת אותך המון ותודה על הכל , על התמיכה ברגעים הקשים , צחוקים ועל זה שהייתה חבר אמיתי  , מקווה שכך זה ישאר! נשיקות (צחי זה גם קשור אליך אבל אתה לא עוזב אז לא משנה בינתיים ) ❤</div>
+            <img src="img/img/12.jpeg">
+            <h2>אליק</h2>
+            <div dir="rtl">מאחל לך המון בהצלחה במקום טוב יותר ;)
+בטוח שיהיה לך כיף שם, שתיבגוש חברים ואתגרים חדשים, שתתקדם ותצליח במה שאתה אוהב.
+שמחתי להכיר ולעבוד איתך אחינו.</div>
+            <h2>דיאגו</h2>
+            <img src="img/img/2.jpg">
+            <h2>צחי</h2>
+            <div dir="rtl">חבוב מה קורה ? שיהיה לך בהצחה בעבודה החדשה אל תשכח מאיפה באת ;) ולאיפה תלך?!  ושמור על קשר :) </div>
+            <h1 style="padding-top:150px;">Game Script And Creator</h1>
+            <h2>צחי</h2>
+            <img src="img/img/7.jpg">
+            <h1 style="padding-top:150px;">Sound</h1>
+            <h2>חן</h2>
+            <h2>דיאגו</h2>
+            <h2>שימרי</h2>
+            <img src="img/img/11.jpg">
+            <h1 style="padding-top:150px;">We All Love You</h1>
+            <h2>צחי</h2>
+            <h2>חן</h2>
+            <h2>דיאגו</h2>
+            <h2>שימרי</h2>
+            <h2>אורלי</h2>
+            <h2>דבורה</h2>
+            <h2>אור</h2>
+            <h2>עידן</h2>
+            <h2>דויד</h2>
+            <h2>שי</h2>
+            <h2>מאיר</h2>
+            <h2>תמיר</h2>
+            <h2>רומן</h2>
+            <h2>אליק</h2>
+            <h2>דן</h2>
+            <h2>יאנה</h2>
+            <h1 style="padding-top:150px;">Picturs</h1>
+            <img src="img/img/3.jpg">
+            <img src="img/img/5.jpg">
+            <img src="img/img/4.jpg">
+            <img src="img/img/8.jpg">
+            <img src="img/img/9.jpg">
+            <img src="img/img/10.jpg">
+            <h1 style="padding-top:150px;">GOOD LUCK</h1>
+            <img src="img/img/6.jpg">
+
+        </div>
+    </div>
+    <div id="game_container">
+      <mainActor></mainActor>
+      <div id="hud"></div>
+      <div id="score">
+          <div>SCORE :</div>
+          <div id="score-box"></div>
+      </div>
+      <div id="short_message">
+          <div id="short_message_img_container"><img id="short_message_img"></div>
+          <div id="short_message_box" dir="rtl"></div>
+      </div>
+      <div id="player">
+        <div id="player" class="hud-friend">
+              <div class="hud-friend-image">
+                  <img src="img/chen.png">
+              </div>
+              <div class="hud-friend-title">Chen</div>
+              <div id="player-heal" class="hud-friend-heal"></div>
+        </div>
+      </div>
+    </div>
+    <div id = "ui">
+        <div id = "menu">
+            <h1>Menu</h1>
+            <div  class = "button" id ="start_menu" onclick="this.innerHTML='Resume'">Start</div>
+            <hr>
+            <div  class = "button" onclick="location.reload();">Restart</div>
+        </div>
+
+    </div>
+
+    <script src="js/mini.js"></script>
+    <!-- <script src="js/ball.js"></script>
+    <script src="js/hud.js"></script>
+    <script src="js/soundBomb.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/whitenoise.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/wntrigger.js"></script>
+    <script src="js/friendly_ai.js"></script>
+    <script src="js/short_message.js"></script>
+    <script src="js/script.js"></script> -->
+  </body>
+</html>

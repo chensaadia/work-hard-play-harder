@@ -12,6 +12,8 @@ var chet = false;
 var shortMessage = new ShortMessage();
 var gameEngine;
 
+var initialEnergy = 15;
+var energyBarController;
 
   window.onload = function(){
     document.getElementById('start_btn').onclick = function(){
@@ -20,6 +22,7 @@ var gameEngine;
     };
     document.getElementById('start_menu').onclick = function(){
       togleGame();
+      energyBarController = new EnergyBar(initialEnergy);
     };
     gameObjects.push(player);
     KeyMapConfig();

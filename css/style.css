@@ -431,3 +431,32 @@ mainActor{
   height: 20px;
   width: 43px;
 }
+
+
+#top-bar{
+  height: 50px;
+  background: black;
+}
+
+/* Progress bar */
+
+#progress_bar_container{
+  width: 250px;
+  height: 20px;
+  border-radius: 5px;
+}
+
+#progress_bar{
+  text-align: center;
+  color: white;
+}
+
+#progress_bar.success{
+  background-color: #5cb85c;
+}
+
+#progress_bar.danger{
+  background-color: #d9534f;
+}
+
+/* Progress bar */
